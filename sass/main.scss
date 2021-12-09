@@ -1,0 +1,24 @@
+@import "./utils/base";
+@import "./utils/variables";
+@import "./utils/normalize";
+
+@import "./components/visually-hidden";
+@import "./components/title";
+@import "./components/container";
+@import "./components/section";
+@import "./components/btn";
+@import "./components/logo";
+@import "./components/page-nav";
+@import "./components/contact";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/filter";
+@import "./components/worklist";
+
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/peculiarities";
+@import "./layouts/ourworks";
+@import "./layouts/ourteam";
+@import "./layouts/clients";
+@import "./layouts/footer";
