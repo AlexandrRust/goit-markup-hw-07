@@ -24,25 +24,19 @@
 
 .ourteam-card__title {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
+  @include font(16px, 1.18, 0.03em, getColor("title-color"));
   text-align: center;
-  letter-spacing: 0.03em;
-  color: getColor("title-color");
 }
 
 .ourteam-card__text {
-  font-size: 16px;
-  line-height: 1.18;
+  @include font(16px, 1.18, 0.03em, getColor("text-color"));
   text-align: center;
-  letter-spacing: 0.03em;
-  color: getColor("text-color");
   margin-top: 10px;
   margin-bottom: 16px;
 }
 
 .ourteam-social {
-  @extend %flex-center;
+  @include flex();
 }
 
 .ourteam-social__item:not(:last-child) {

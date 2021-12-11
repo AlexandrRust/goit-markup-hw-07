@@ -19,7 +19,7 @@
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 5px;
-  @extend %flex-center;
+  @include flex();
   color: getColor("icon-color");
   transition: border-color $transition-duration $timing-function,
     color $transition-duration $timing-function;

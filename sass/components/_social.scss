@@ -1,5 +1,5 @@
 .social__link {
-  @extend %flex-center;
+  @include flex();
   width: 44px;
   height: 44px;
   border-radius: 50%;

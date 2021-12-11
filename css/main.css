@@ -289,12 +289,6 @@ img {
   text-decoration: none;
 }
 
-.social__link, .peculiarities-card__box, .ourteam-social, .clients__link, .footer-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -331,10 +325,10 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  text-align: center;
-  display: block;
   letter-spacing: 0.06em;
   color: #ffffff;
+  text-align: center;
+  display: block;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
@@ -354,6 +348,7 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  color: inherit;
 }
 
 .logo--blue {
@@ -519,7 +514,7 @@ img {
   height: 120px;
   resize: none;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   margin-top: 4px;
@@ -597,7 +592,6 @@ img {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  color: #212121;
   background: #f5f4fa;
   margin-right: 8px;
   padding: 6px 22px;
@@ -685,6 +679,9 @@ img {
 }
 
 .social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -714,7 +711,7 @@ img {
 .header-contact_link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
   display: flex;
@@ -758,8 +755,8 @@ img {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
   color: #ffffff;
+  text-transform: uppercase;
   max-width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -788,6 +785,9 @@ img {
   background-color: #f5f4fa;
   width: 270px;
   height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -796,8 +796,8 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #212121;
+  text-transform: uppercase;
 }
 
 .peculiarities-card__text {
@@ -841,11 +841,11 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
+  color: #ffffff;
+  text-align: center;
   text-transform: uppercase;
   padding: 27px 0;
-  color: #ffffff;
 }
 
 .ourteam {
@@ -876,19 +876,25 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  text-align: center;
 }
 
 .ourteam-card__text {
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+  text-align: center;
   margin-top: 10px;
   margin-bottom: 16px;
+}
+
+.ourteam-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .ourteam-social__item:not(:last-child) {
@@ -929,6 +935,9 @@ img {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #afb1b8;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -960,11 +969,8 @@ address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-top: 20px;
-}
-
-.footer-address {
   color: #ffffff;
+  margin-top: 20px;
 }
 
 .footer-contact__link {
@@ -987,8 +993,8 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #ffffff;
+  text-transform: uppercase;
   margin-bottom: 20px;
 }
 
@@ -1022,6 +1028,9 @@ address {
 }
 
 .footer-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   height: 50px;
 }
@@ -1037,9 +1046,9 @@ address {
   padding: 15px 16px;
   font-size: 16px;
   line-height: 1.25;
-  align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  align-items: center;
   margin-right: 12px;
 }
 

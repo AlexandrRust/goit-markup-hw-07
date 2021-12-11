@@ -27,11 +27,8 @@
 
 .ourworks-item__title {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 1.14, 0.03em, #ffffff);
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   padding: 27px 0;
-  color: #ffffff;
 }

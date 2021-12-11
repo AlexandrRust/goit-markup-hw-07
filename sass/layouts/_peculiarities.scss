@@ -15,23 +15,17 @@
   background-color: #f5f4fa;
   width: 270px;
   height: 120px;
-  @extend %flex-center;
+  @include flex();
   margin-bottom: 30px;
 }
 
 .peculiarities-card__title {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.14, 0.03em, getColor("title-color"));
   text-transform: uppercase;
-  color: getColor("title-color");
 }
 .peculiarities-card__text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: getColor("text-color");
+  @include font(14px, 1.71, 0.03em, getColor("text-color"));
   width: 270px;
   height: 75px;
   margin-top: 10px;
