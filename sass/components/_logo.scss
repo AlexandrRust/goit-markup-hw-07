@@ -4,12 +4,13 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--first-logo-color);
-  margin-right: 93px;
-  &-item {
-    color: var(--third-logo-color);
+  &--blue {
+    color: getColor("first-logo-color");
   }
-}
-.footer-logo {
-  color: var(--second-logo-color);
+  &--dark {
+    color: getColor("third-logo-color");
+  }
+  &--white {
+    color: getColor("second-logo-color");
+  }
 }

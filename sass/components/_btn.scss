@@ -5,16 +5,16 @@
   text-align: center;
   display: block;
   letter-spacing: 0.06em;
-  color: var(--second-btn-text-color);
-  background-color: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: getColor("second-btn-text-color");
+  background-color: getColor("btn-bg-color");
+  box-shadow: $box-shadow-btn;
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  transition: box-shadow var(--accent-transition),
-    background-color var(--accent-transition);
+  transition: box-shadow $transition-duration $timing-function,
+    background-color $transition-duration $timing-function;
   &:hover {
-    background-color: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: getColor("accent-btn-bg-color");
+    box-shadow: $accent-box-shadow-btn;
   }
 }

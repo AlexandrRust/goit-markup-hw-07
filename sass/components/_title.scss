@@ -3,6 +3,6 @@
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: var(--title-color);
+  color: getColor("title-color");
   text-align: center;
 }

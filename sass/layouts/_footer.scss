@@ -22,12 +22,22 @@ address {
   color: #ffffff;
 }
 
+.footer-contact__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  margin-top: 9px;
+  transition: color $transition-duration $timing-function;
+}
+
 .footer-center-thumb {
   padding-top: 12px;
   max-width: 206px;
 }
 
-.footer-title {
+.footer__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -37,33 +47,24 @@ address {
   margin-bottom: 20px;
 }
 
-.center-thumb-list {
+.center-thumb-social {
   display: flex;
 }
 
-.center-thumb-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  transition: background-color var(--accent-transition);
-}
-
-.center-thumb-item:not(:last-child) {
+.center-thumb__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.center-thumb-icon {
-  margin: 0 auto;
-  fill: var(--accent-icon-color);
+.center-thumb__link {
+  background-color: rgba(255, 255, 255, 0.1);
+  &:hover,
+  &:focus {
+    background-color: getColor("accent-color");
+  }
 }
 
-.center-thumb-link:hover,
-.center-thumb-link:focus {
-  background-color: var(--accent-color);
+.social__icon--white {
+  fill: getColor("accent-icon-color");
 }
 
 .rith-thumb {
@@ -71,17 +72,17 @@ address {
   padding-top: 12px;
 }
 
-.rith-thumb-title {
+.rith-thumb__title {
   display: block;
 }
 
 .footer-form {
-  display: flex;
+  @extend %flex-center;
   position: relative;
   height: 50px;
 }
 
-.footer-input {
+.footer__input {
   width: 358px;
   height: 50px;
   background-color: transparent;
@@ -98,13 +99,11 @@ address {
   margin-right: 12px;
 }
 
-.footer-form-button {
-  display: flex;
+.footer-form__button {
+  display: inline-flex;
   padding: 10px 28px;
-  justify-content: center;
-  align-items: center;
 }
 
-.footer-icon-button {
+.footer-form__icon {
   margin-left: 10px;
 }
